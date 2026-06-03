@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Community Event Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Local Community Event Portal</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">Register</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section id="welcomeBanner">
+    <h2>Welcome User</h2>
+    <p class="highlight">
+        Free Entry for First 50 Registrations
+    </p>
+</section>
+
+<section id="registration">
+    <h2>Event Registration Form</h2>
+
+    <form id="registrationForm">
+
+        <label>Name</label>
+        <input type="text" name="name">
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Select Event</label>
+        <select name="event">
+            <option value="">Choose Event</option>
+            <option value="Music Festival">Music Festival</option>
+            <option value="Food Fair">Food Fair</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <button type="submit" id="registerBtn">
+            Register
+        </button>
+
+        <p id="errorMsg"></p>
+        <p id="successMsg"></p>
+
+    </form>
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>
